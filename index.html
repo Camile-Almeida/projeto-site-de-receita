@@ -7,20 +7,18 @@
   <style>
     body{
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: larger;
         margin: 1%;
         background-color: rgb(224, 169, 163);   
     }
     .container{
-        height: 100%;
-        width:80%;
+        width:90%;
         background-color: rgb(247, 240, 240);
         margin:auto;
         border-radius: 3%;
         padding: 1%;
         display: flex; /* importante para ficar responsivo*/
         flex-direction: column;/* importante para ficar um embaixo do outro*/
-        justify-content:space-between;
+      
     }
     .tempo{
         background-color: rgb(226, 204, 216);
@@ -31,20 +29,23 @@
        
     }
     h2{
-        color: rgb(163, 135, 132);
-        justify-content: flex-start;
-
-        
+        color: rgb(163, 135, 132);        
     }
-    img{
-     padding: 3%;
-     height: 40%;
-     width: 90%;
+    .imagem {
+        display: flex;
+        justify-content: center;
+    }
+    .imagem img{
+     width:100%;
+     max-width: 600px;
+     height: auto;
+     border-radius: 16px;
      padding-bottom: 1%;
-     justify-content: center;
-     align-items: center;
-     
+     display: block;
     }
+    .container>img{
+   align-items: center;
+  }
     td{
         padding: 1% 1%;
         border-bottom: 1% solid #ddd;
@@ -58,7 +59,9 @@
 </head>
 <body>
     <div class="container">
-    <img src="omelete foto.jpg" alt="" style="border-radius: 60px;">
+    <div class="imagem">
+        <img src="omelete foto.jpg" alt="" style="border-radius: 60px;">
+    </div> 
     <h1> Receita de Omelete Simples    </h1>
     <p> Um prato fácil e rápido, perfeito para qualquer refeição. Esta omelete clássica combina ovos batidos cozidos à perfeição, opcionalmente recheados com queijo, vegetais ou carnes de sua escolha. </p>
     <div class="tempo"><h3> Tempo de preparação</h3>
